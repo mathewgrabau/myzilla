@@ -1,0 +1,429 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{795FC7E3-8F22-4B2F-80EC-F4F8B99139D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyZilla.UI</RootNamespace>
+    <AssemblyName>MyZilla</AssemblyName>
+    <ApplicationIcon>MyZilla 16x16.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>PublicPrivateKeyFile.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatalogueManager.cs" />
+    <Compile Include="ConfigItems\NodeDescription.cs" />
+    <Compile Include="ConfigItems\TDSQueriesTree.cs">
+      <DependentUpon>TDSQueriesTree.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConfigItems\TDSQueriesTree.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSQueriesTree.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAttachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAttachment.Designer.cs">
+      <DependentUpon>FormAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnectionSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnectionSettings.Designer.cs">
+      <DependentUpon>FormConnectionSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewVersion.Designer.cs">
+      <DependentUpon>FormNewVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectCols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectCols.Designer.cs">
+      <DependentUpon>FormSelectCols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IUpdateBug.cs" />
+    <Compile Include="Reporting\RdlGenerator.cs" />
+    <Compile Include="Reporting\ReportDefinition.cs" />
+    <Compile Include="Reporting\TableRdlGenerator.cs" />
+    <Compile Include="ShortcutsInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCAdvancedSearchMobile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdvancedSearchMobile.Designer.cs">
+      <DependentUpon>UCAdvancedSearchMobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncOperationStatus.cs" />
+    <Compile Include="FormGlobalSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGlobalSettings.Designer.cs">
+      <DependentUpon>FormGlobalSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInstanceManager.cs" />
+    <Compile Include="FormQueryName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQueryName.Designer.cs">
+      <DependentUpon>FormQueryName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatus.Designer.cs">
+      <DependentUpon>FormStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Messages.Designer.cs">
+      <DependentUpon>Messages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SplashScreen\FormSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen\FormSplash.designer.cs">
+      <DependentUpon>FormSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen\ISplashForm.cs" />
+    <Compile Include="SplashScreen\Splasher.cs" />
+    <Compile Include="UCBugStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBugStatus.Designer.cs">
+      <DependentUpon>UCBugStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCComments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCComments.Designer.cs">
+      <DependentUpon>UCComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditBug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditBug.Designer.cs">
+      <DependentUpon>UCEditBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddBug.Designer.cs">
+      <DependentUpon>FormAddBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditBug.Designer.cs">
+      <DependentUpon>FormEditBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCInsertBug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInsertBug.Designer.cs">
+      <DependentUpon>UCInsertBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAttachment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnectionSettings.resx">
+      <DependentUpon>FormConnectionSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewVersion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormNewVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectCols.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectCols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdvancedSearchMobile.resx">
+      <DependentUpon>UCAdvancedSearchMobile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGlobalSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGlobalSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQueryName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormQueryName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen\FormSplash.resx">
+      <DependentUpon>FormSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBugStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCBugStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCComments.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditBug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEditBug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddBug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAddBug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditBug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEditBug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInsertBug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCInsertBug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProgressStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCProgressStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCResults.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWelcome.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="ConfigItems\TDSQueriesTree.xsc">
+      <DependentUpon>TDSQueriesTree.xsd</DependentUpon>
+    </None>
+    <None Include="ConfigItems\TDSQueriesTree.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSQueriesTree.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ConfigItems\TDSQueriesTree.xss">
+      <DependentUpon>TDSQueriesTree.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UCProgressStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProgressStatus.Designer.cs">
+      <DependentUpon>UCProgressStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCResults.Designer.cs">
+      <DependentUpon>UCResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWelcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWelcome.Designer.cs">
+      <DependentUpon>UCWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BSI.BL.BugzillaHttp\BSI.BL.BugzillaHttp.csproj">
+      <Project>{D0169E1A-300C-4240-A5D6-2A9CB4C81D67}</Project>
+      <Name>BSI.BL.BugzillaHttp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BSI.BL.Interfaces\BSI.BL.Interfaces.csproj">
+      <Project>{0B603341-C556-4CD4-B9BE-965B642DE7DC}</Project>
+      <Name>BSI.BL.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BSI.BusinessEntities\BSI.BusinessEntities.csproj">
+      <Project>{24F3054A-B259-4BCE-A4E1-D290C4D4BFF2}</Project>
+      <Name>BSI.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tremend.Logging\Tremend.Logging.csproj">
+      <Project>{517994E2-E5E0-4BE4-8F50-08853D8E2714}</Project>
+      <Name>Tremend.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advanced_search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_by_id.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connection_settings.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_miscfolderyellow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_bug.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_catalogues.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\columns.png" />
+    <Content Include="MyZilla 16x16.ico" />
+    <None Include="Resources\close_tab.png" />
+    <None Include="Resources\advanced_search.png" />
+    <None Include="Resources\attach.png" />
+    <Content Include="Resources\Connection.gif" />
+    <None Include="Resources\run.gif" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\new_bug.png" />
+    <None Include="Resources\connection.png" />
+    <None Include="Resources\run.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\splash.gif" />
+    <None Include="Resources\refresh_catalogs.png" />
+    <None Include="Resources\refresh_catalogues.png" />
+    <None Include="Resources\tab_close.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\show_hide.png" />
+    <None Include="Resources\MyZilla 16x16.ico" />
+    <None Include="Resources\no_attach.png" />
+    <None Include="Resources\myzilla.jpg" />
+    <None Include="Resources\myzilla1.jpg" />
+    <None Include="Resources\myzilla-bg.jpg" />
+    <Content Include="Resources\taskzilla-icon.ico" />
+    <Content Include="Resources\User.gif" />
+    <Content Include="Resources\User_Green.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ConfigItems\TDSQueriesTree.xsx">
+      <DependentUpon>TDSQueriesTree.xsd</DependentUpon>
+    </None>
+    <None Include="PublicPrivateKeyFile.snk" />
+    <None Include="Resources\show.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" "C:\Program Files\Eazfuscator.NET\Eazfuscator.NET.exe" "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" -n --newline-flush</PostBuildEvent>
+  </PropertyGroup>
+</Project>

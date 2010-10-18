@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddBugInProgress" xml:space="preserve">
+    <value>Adding a new bug ...</value>
+  </data>
+  <data name="BugNotFound" xml:space="preserve">
+    <value>Bug {0} does not exist or you do not have rights to access it!</value>
+  </data>
+  <data name="ConfirmDeleteFolder" xml:space="preserve">
+    <value>Are you sure you want to delete folder "{0}"? All queries and folders within will be deleted too!</value>
+  </data>
+  <data name="FolderNotEmpty" xml:space="preserve">
+    <value>Folder "{0}" is not empty!</value>
+  </data>
+  <data name="EndOperation" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="ErrorAsyncOperation" xml:space="preserve">
+    <value>Error in asynchronous operation.</value>
+  </data>
+  <data name="LoadBugDetails" xml:space="preserve">
+    <value>Loading bug ID# {0} ...</value>
+  </data>
+  <data name="LoadCataloguesInProgress" xml:space="preserve">
+    <value>Loading catalogues for "{0}" ...</value>
+  </data>
+  <data name="LoadComponentCatalogue" xml:space="preserve">
+    <value>Loading component catalogue ...</value>
+  </data>
+  <data name="LoadDependentCatalogues" xml:space="preserve">
+    <value>Loading dependent catalogues ...</value>
+  </data>
+  <data name="LoadHardwareCatalogue" xml:space="preserve">
+    <value>Loading hardware catalogue ...</value>
+  </data>
+  <data name="LoadOperatorsCatalogue" xml:space="preserve">
+    <value>Loading operators catalogue ..</value>
+  </data>
+  <data name="LoadOsCatalogue" xml:space="preserve">
+    <value>Loading operating system catalogue ...</value>
+  </data>
+  <data name="LoadPriorityCatalogue" xml:space="preserve">
+    <value>Loading priority catalogue ...</value>
+  </data>
+  <data name="LoadProductCatalogue" xml:space="preserve">
+    <value>Loading product catalogue ...</value>
+  </data>
+  <data name="LoadResolutionCatalogue" xml:space="preserve">
+    <value>Loading resolution catalogue ...</value>
+  </data>
+  <data name="LoadSeverityCatalogue" xml:space="preserve">
+    <value>Loading severity catalogue ...</value>
+  </data>
+  <data name="LoadSpecificCatalogues" xml:space="preserve">
+    <value>Loading specific catalogues ...</value>
+  </data>
+  <data name="LoadStatusCatalogue" xml:space="preserve">
+    <value>Loading status catalogue ...</value>
+  </data>
+  <data name="LoadVersionCatalogue" xml:space="preserve">
+    <value>Loading version catalogue ...</value>
+  </data>
+  <data name="NoOperation" xml:space="preserve">
+    <value>No operation.</value>
+  </data>
+  <data name="SearchInProgress" xml:space="preserve">
+    <value>Searching...</value>
+  </data>
+  <data name="UpdateBugInProgress" xml:space="preserve">
+    <value>Updating bug {0}</value>
+  </data>
+  <data name="LoadDefaultTree" xml:space="preserve">
+    <value>Loading predefined folders and queries</value>
+  </data>
+  <data name="InvalidLogin" xml:space="preserve">
+    <value>Invalid user name or password.</value>
+  </data>
+  <data name="Test_Failed" xml:space="preserve">
+    <value>Test failed.</value>
+  </data>
+  <data name="Test_OK" xml:space="preserve">
+    <value>Test was successful.</value>
+  </data>
+  <data name="TestConnectionInProgress" xml:space="preserve">
+    <value>Connecting</value>
+  </data>
+  <data name="TestCredentials" xml:space="preserve">
+    <value>Checking account name and password </value>
+  </data>
+  <data name="QueryDescriptionRequired" xml:space="preserve">
+    <value>Query description is required!</value>
+  </data>
+  <data name="QueryNameRequired" xml:space="preserve">
+    <value>Query name is required!</value>
+  </data>
+  <data name="TestConnectionWarning" xml:space="preserve">
+    <value>Connection settings were not tested.</value>
+  </data>
+  <data name="ConfirmDeleteQuery" xml:space="preserve">
+    <value>Are you sure you want to delete the query "{0}" ?</value>
+  </data>
+  <data name="BugIDIsNotValid" xml:space="preserve">
+    <value>You need to enter a valid bug id !</value>
+  </data>
+  <data name="BugIdDoesNotExists" xml:space="preserve">
+    <value>Bug #{0} does not exist or you do not have rights to access it!</value>
+  </data>
+  <data name="EnterValidValue" xml:space="preserve">
+    <value>Enter a valid value, please.</value>
+  </data>
+  <data name="NotEmptyField" xml:space="preserve">
+    <value>Enter a value in this field, please.</value>
+  </data>
+  <data name="EstablishingConnection" xml:space="preserve">
+    <value>Establishing connection ...</value>
+  </data>
+  <data name="ConnectionEstablished" xml:space="preserve">
+    <value>Connected to the {0}</value>
+  </data>
+  <data name="NewUser" xml:space="preserve">
+    <value>New user</value>
+  </data>
+  <data name="QueryIsReadOnly" xml:space="preserve">
+    <value>This query is predefined. You are not allowed to delete predefined queries!</value>
+  </data>
+  <data name="NewConnection" xml:space="preserve">
+    <value>New connection</value>
+  </data>
+  <data name="AppSettingsObjNotValid" xml:space="preserve">
+    <value>Fatal error. Application settings are not loaded.</value>
+  </data>
+  <data name="SaveGlSettingsOK" xml:space="preserve">
+    <value>Settings have been successfully saved.</value>
+  </data>
+  <data name="FolderRequired" xml:space="preserve">
+    <value>Choosing a folder is required!</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ModifiedData" xml:space="preserve">
+    <value>Do you want to save the modifications?</value>
+  </data>
+  <data name="NotValidURL" xml:space="preserve">
+    <value>Please, enter a valid URL.</value>
+  </data>
+  <data name="NoCurrentUser" xml:space="preserve">
+    <value>Please, select a user.</value>
+  </data>
+  <data name="ErrLoadingCatalogues" xml:space="preserve">
+    <value>Error when loading catalogues.</value>
+  </data>
+  <data name="ErrAddBug" xml:space="preserve">
+    <value>Error when inserting bug.</value>
+  </data>
+  <data name="ErrGetBugDetails" xml:space="preserve">
+    <value>Error when loading bug details.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrSearching" xml:space="preserve">
+    <value>Error when searching.</value>
+  </data>
+  <data name="ErrUpdBug" xml:space="preserve">
+    <value>Error when editing bug.</value>
+  </data>
+  <data name="LoadDefaultSettings" xml:space="preserve">
+    <value>Loading default settings ...</value>
+  </data>
+  <data name="NoLoadedCatalogues" xml:space="preserve">
+    <value>No information about the current connection is loaded.{0}Please, verify if the selected user is logged in.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="EditBugTitle" xml:space="preserve">
+    <value>Edit bug {0}</value>
+  </data>
+  <data name="NotModifiedBug" xml:space="preserve">
+    <value>The bug {0} has not been modified. </value>
+  </data>
+  <data name="ContinueWithoutSavingData" xml:space="preserve">
+    <value>By closing this window you will lose any unsaved data! Are you sure you want to continue?</value>
+  </data>
+  <data name="NoActiveConnection" xml:space="preserve">
+    <value>The connection {0} is not active. </value>
+  </data>
+  <data name="NoCurrentConnection" xml:space="preserve">
+    <value>Please, define a connection before adding  a user.</value>
+  </data>
+  <data name="WNoUsers" xml:space="preserve">
+    <value>After you define a connection you can introduce users for it.{0}Do you want to add users in the application?</value>
+  </data>
+  <data name="SaveCurrentConn" xml:space="preserve">
+    <value>Save the current connection, please.</value>
+  </data>
+  <data name="SaveCurrentUser" xml:space="preserve">
+    <value>Save the current user, please.</value>
+  </data>
+  <data name="WTestConnection" xml:space="preserve">
+    <value>Please, test the current connection before saving it.</value>
+  </data>
+  <data name="WTestCredentials" xml:space="preserve">
+    <value>Please, test the credentials for the current user.</value>
+  </data>
+  <data name="ErrTestConnection" xml:space="preserve">
+    <value>Error when connecting to {0}.</value>
+  </data>
+  <data name="ErrUploadFile" xml:space="preserve">
+    <value>Error when uploading file. {0}{1}</value>
+  </data>
+  <data name="MessModifiedBug" xml:space="preserve">
+    <value>You have been modified the current bug. Do you want to save it?</value>
+  </data>
+  <data name="ErrPostFile" xml:space="preserve">
+    <value>Error when posting file {0}.</value>
+  </data>
+  <data name="UpdBugOK" xml:space="preserve">
+    <value>The bug {0} was successfully updated.</value>
+  </data>
+  <data name="MsgCountBugs" xml:space="preserve">
+    <value>Retrieving query count for "{0}" ...</value>
+  </data>
+  <data name="MsgOpenBugs" xml:space="preserve">
+    <value>Do you want to open {0} bugs. Are you sure of it?</value>
+  </data>
+  <data name="QuerySuccessfulSaved" xml:space="preserve">
+    <value>Query "{0}" was successful saved!</value>
+  </data>
+  <data name="MsgAttNotAllowed" xml:space="preserve">
+    <value>One attachment is allowed for this connection for a new bug.{0}After saving the bug, you can edit it and attach many files. </value>
+  </data>
+  <data name="MsgExistModifications" xml:space="preserve">
+    <value>Are you sure you don't want to save your changes?</value>
+  </data>
+  <data name="MaxNrOfTabsExceeded" xml:space="preserve">
+    <value>You have too many tab pages opened! Please close some of them!</value>
+  </data>
+  <data name="ErrConnectionToServerFailed" xml:space="preserve">
+    <value>Connection to server [{0}] failed!</value>
+  </data>
+  <data name="GenerateReport" xml:space="preserve">
+    <value>Please wait while the report is being generated.</value>
+  </data>
+  <data name="NewVersionCaption" xml:space="preserve">
+    <value>New MyZilla version</value>
+  </data>
+  <data name="NewVersionMessage" xml:space="preserve">
+    <value>A new version of MyZilla is now available!
+Do you want to open the download webpage?</value>
+  </data>
+  <data name="OpenFileError" xml:space="preserve">
+    <value>Not implemented functionality for {0} files.</value>
+  </data>
+  <data name="ConnectionNameAlreadyExists" xml:space="preserve">
+    <value>This connection name is already in use!</value>
+  </data>
+  <data name="BugzillaListCookieFailedToGenerate" xml:space="preserve">
+    <value>Bugzilla column list cookie failed to be generated!</value>
+  </data>
+  <data name="GeneratingBugzillaListCookie" xml:space="preserve">
+    <value>Generating Bugzilla column list cookie is still in progress!</value>
+  </data>
+  <data name="GettingBulkBugsDetails_Completed" xml:space="preserve">
+    <value>Getting bugs details completed</value>
+  </data>
+  <data name="GettingBulkBugsDetails_Progress" xml:space="preserve">
+    <value>Getting bugs details</value>
+  </data>
+  <data name="GettingBulkBugsDetails_Start" xml:space="preserve">
+    <value>Initialize getting bugs details</value>
+  </data>
+  <data name="ExportFolderDoesNotExist" xml:space="preserve">
+    <value>The folder configured for exporting [{0}] does not exist!
+Please change it from the "Tools-&gt;Global settings" menu.</value>
+  </data>
+  <data name="ExportNotPossible" xml:space="preserve">
+    <value>Export is not possible because current query is in execution!
+Please try again after query ends!</value>
+  </data>
+  <data name="NoBugWithValidStatusTransition" xml:space="preserve">
+    <value>None of the selected bugs has a valid status transition!</value>
+  </data>
+</root>
