@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TDSQueriesTree" targetNamespace="http://tempuri.org/TDSQueriesTree.xsd" xmlns:mstns="http://tempuri.org/TDSQueriesTree.xsd" xmlns="http://tempuri.org/TDSQueriesTree.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Folders" msprop:Generator_UserTableName="Folders" msprop:Generator_RowDeletedName="FoldersRowDeleted" msprop:Generator_RowChangedName="FoldersRowChanged" msprop:Generator_RowClassName="FoldersRow" msprop:Generator_RowChangingName="FoldersRowChanging" msprop:Generator_RowEvArgName="FoldersRowChangeEvent" msprop:Generator_RowEvHandlerName="FoldersRowChangeEventHandler" msprop:Generator_TableClassName="FoldersDataTable" msprop:Generator_TableVarName="tableFolders" msprop:Generator_RowDeletingName="FoldersRowDeleting" msprop:Generator_TablePropName="Folders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+        <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="ParentID" msprop:Generator_UserColumnName="ParentID" msprop:Generator_ColumnVarNameInTable="columnParentID" msprop:Generator_ColumnPropNameInRow="ParentID" msprop:Generator_ColumnPropNameInTable="ParentIDColumn" type="xs:int" default="-1" minOccurs="0" />
+        <xs:element name="LevelID" msprop:Generator_UserColumnName="LevelID" msprop:Generator_ColumnVarNameInTable="columnLevelID" msprop:Generator_ColumnPropNameInRow="LevelID" msprop:Generator_ColumnPropNameInTable="LevelIDColumn" type="xs:int" minOccurs="0" />
+        <xs:element name="UserID" msprop:Generator_UserColumnName="UserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" type="xs:int" minOccurs="0" />
+        <xs:element name="Expanded" msprop:Generator_UserColumnName="Expanded" msprop:Generator_ColumnPropNameInRow="Expanded" msprop:Generator_ColumnVarNameInTable="columnExpanded" msprop:Generator_ColumnPropNameInTable="ExpandedColumn" type="xs:boolean" minOccurs="0" />
+        <xs:element name="ReadOnly" msprop:Generator_UserColumnName="ReadOnly" msprop:Generator_ColumnPropNameInRow="ReadOnly" msprop:Generator_ColumnVarNameInTable="columnReadOnly" msprop:Generator_ColumnPropNameInTable="ReadOnlyColumn" type="xs:boolean" default="false" minOccurs="0" />
+        <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" default="false" minOccurs="0" />
+        <xs:element ref="Folders" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <msdata:Relationship name="Folders_Folders" msdata:parent="Folders" msdata:child="Folders" msdata:parentkey="ID" msdata:childkey="ParentID" msprop:Generator_UserRelationName="Folders_Folders" msprop:Generator_RelationVarName="relationFolders_Folders" msprop:Generator_UserChildTable="Folders" msprop:Generator_UserParentTable="Folders" msprop:Generator_ParentPropName="FoldersRowParent" msprop:Generator_ChildPropName="GetFoldersRows" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TDSQueriesTree" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TDSQueriesTree" msprop:Generator_DataSetName="TDSQueriesTree">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Folders" />
+        <xs:element name="QueryTypes" msprop:Generator_UserTableName="QueryTypes" msprop:Generator_RowDeletedName="QueryTypesRowDeleted" msprop:Generator_RowChangedName="QueryTypesRowChanged" msprop:Generator_RowClassName="QueryTypesRow" msprop:Generator_RowChangingName="QueryTypesRowChanging" msprop:Generator_RowEvArgName="QueryTypesRowChangeEvent" msprop:Generator_RowEvHandlerName="QueryTypesRowChangeEventHandler" msprop:Generator_TableClassName="QueryTypesDataTable" msprop:Generator_TableVarName="tableQueryTypes" msprop:Generator_RowDeletingName="QueryTypesRowDeleting" msprop:Generator_TablePropName="QueryTypes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:unsignedByte" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QueryParameters" msprop:Generator_UserTableName="QueryParameters" msprop:Generator_RowDeletedName="QueryParametersRowDeleted" msprop:Generator_RowChangedName="QueryParametersRowChanged" msprop:Generator_RowClassName="QueryParametersRow" msprop:Generator_RowChangingName="QueryParametersRowChanging" msprop:Generator_RowEvArgName="QueryParametersRowChangeEvent" msprop:Generator_RowEvHandlerName="QueryParametersRowChangeEventHandler" msprop:Generator_TableClassName="QueryParametersDataTable" msprop:Generator_TableVarName="tableQueryParameters" msprop:Generator_RowDeletingName="QueryParametersRowDeleting" msprop:Generator_TablePropName="QueryParameters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:unsignedByte" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParametersValues" msprop:Generator_UserTableName="ParametersValues" msprop:Generator_RowDeletedName="ParametersValuesRowDeleted" msprop:Generator_RowChangedName="ParametersValuesRowChanged" msprop:Generator_RowClassName="ParametersValuesRow" msprop:Generator_RowChangingName="ParametersValuesRowChanging" msprop:Generator_RowEvArgName="ParametersValuesRowChangeEvent" msprop:Generator_RowEvHandlerName="ParametersValuesRowChangeEventHandler" msprop:Generator_TableClassName="ParametersValuesDataTable" msprop:Generator_TableVarName="tableParametersValues" msprop:Generator_RowDeletingName="ParametersValuesRowDeleting" msprop:Generator_TablePropName="ParametersValues">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="QueryID" msprop:Generator_UserColumnName="QueryID" msprop:Generator_ColumnVarNameInTable="columnQueryID" msprop:Generator_ColumnPropNameInRow="QueryID" msprop:Generator_ColumnPropNameInTable="QueryIDColumn" type="xs:int" />
+              <xs:element name="ParameterID" msprop:Generator_UserColumnName="ParameterID" msprop:Generator_ColumnVarNameInTable="columnParameterID" msprop:Generator_ColumnPropNameInRow="ParameterID" msprop:Generator_ColumnPropNameInTable="ParameterIDColumn" type="xs:unsignedByte" />
+              <xs:element name="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Queries" msprop:Generator_UserTableName="Queries" msprop:Generator_RowDeletedName="QueriesRowDeleted" msprop:Generator_RowChangedName="QueriesRowChanged" msprop:Generator_RowClassName="QueriesRow" msprop:Generator_RowChangingName="QueriesRowChanging" msprop:Generator_RowEvArgName="QueriesRowChangeEvent" msprop:Generator_RowEvHandlerName="QueriesRowChangeEventHandler" msprop:Generator_TableClassName="QueriesDataTable" msprop:Generator_TableVarName="tableQueries" msprop:Generator_RowDeletingName="QueriesRowDeleting" msprop:Generator_TablePropName="Queries">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" default="String.Empty" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FolderID" msprop:Generator_UserColumnName="FolderID" msprop:Generator_ColumnVarNameInTable="columnFolderID" msprop:Generator_ColumnPropNameInRow="FolderID" msprop:Generator_ColumnPropNameInTable="FolderIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TypeID" msprop:Generator_UserColumnName="TypeID" msprop:Generator_ColumnVarNameInTable="columnTypeID" msprop:Generator_ColumnPropNameInRow="TypeID" msprop:Generator_ColumnPropNameInTable="TypeIDColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="BugsCount" msprop:Generator_UserColumnName="BugsCount" msprop:Generator_ColumnPropNameInRow="BugsCount" msprop:Generator_ColumnVarNameInTable="columnBugsCount" msprop:Generator_ColumnPropNameInTable="BugsCountColumn" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Folders" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="PKQueryTypes" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QueryTypes" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="pkParameters" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QueryParameters" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="ParametersValues_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ParametersValues" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="PKQueries" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Queries" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:keyref name="FK_Folders_Queries" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Queries" />
+      <xs:field xpath="mstns:FolderID" />
+    </xs:keyref>
+    <xs:keyref name="FK_QueryTypes_Queries" refer="PKQueryTypes" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Queries" />
+      <xs:field xpath="mstns:TypeID" />
+    </xs:keyref>
+    <xs:keyref name="FK_QueryParameters_ParametersValues" refer="pkParameters" msprop:rel_Generator_UserRelationName="FK_QueryParameters_ParametersValues" msprop:rel_Generator_RelationVarName="relationFK_QueryParameters_ParametersValues" msprop:rel_Generator_UserChildTable="ParametersValues" msprop:rel_Generator_UserParentTable="QueryParameters" msprop:rel_Generator_ParentPropName="QueryParametersRow" msprop:rel_Generator_ChildPropName="GetParametersValuesRows">
+      <xs:selector xpath=".//mstns:ParametersValues" />
+      <xs:field xpath="mstns:ParameterID" />
+    </xs:keyref>
+    <xs:keyref name="FK_Queries_ParametersValues" refer="PKQueries" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:ParametersValues" />
+      <xs:field xpath="mstns:QueryID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

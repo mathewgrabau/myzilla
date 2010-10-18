@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TDSettings" targetNamespace="http://tempuri.org/TDSettings.xsd" xmlns:mstns="http://tempuri.org/TDSettings.xsd" xmlns="http://tempuri.org/TDSettings.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TDSettings" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TDSettings" msprop:Generator_DataSetName="TDSettings">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConnectionType" msprop:Generator_UserTableName="ConnectionType" msprop:Generator_RowDeletedName="ConnectionTypeRowDeleted" msprop:Generator_RowChangedName="ConnectionTypeRowChanged" msprop:Generator_RowClassName="ConnectionTypeRow" msprop:Generator_RowChangingName="ConnectionTypeRowChanging" msprop:Generator_RowEvArgName="ConnectionTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="ConnectionTypeRowChangeEventHandler" msprop:Generator_TableClassName="ConnectionTypeDataTable" msprop:Generator_TableVarName="tableConnectionType" msprop:Generator_RowDeletingName="ConnectionTypeRowDeleting" msprop:Generator_TablePropName="ConnectionType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Connection" msprop:Generator_UserTableName="Connection" msprop:Generator_RowDeletedName="ConnectionRowDeleted" msprop:Generator_RowChangedName="ConnectionRowChanged" msprop:Generator_RowClassName="ConnectionRow" msprop:Generator_RowChangingName="ConnectionRowChanging" msprop:Generator_RowEvArgName="ConnectionRowChangeEvent" msprop:Generator_RowEvHandlerName="ConnectionRowChangeEventHandler" msprop:Generator_TableClassName="ConnectionDataTable" msprop:Generator_TableVarName="tableConnection" msprop:Generator_RowDeletingName="ConnectionRowDeleting" msprop:Generator_TablePropName="Connection">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConnectionId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="ConnectionId" msprop:Generator_ColumnVarNameInTable="columnConnectionId" msprop:Generator_ColumnPropNameInRow="ConnectionId" msprop:Generator_ColumnPropNameInTable="ConnectionIdColumn" type="xs:int" />
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" type="xs:string" />
+              <xs:element name="ConnectionName" msprop:Generator_UserColumnName="ConnectionName" msprop:Generator_ColumnVarNameInTable="columnConnectionName" msprop:Generator_ColumnPropNameInRow="ConnectionName" msprop:Generator_ColumnPropNameInTable="ConnectionNameColumn" type="xs:string" />
+              <xs:element name="URL" msprop:Generator_UserColumnName="URL" msprop:Generator_ColumnVarNameInTable="columnURL" msprop:Generator_ColumnPropNameInRow="URL" msprop:Generator_ColumnPropNameInTable="URLColumn" type="xs:string" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" type="xs:string" />
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RememberPassword" msprop:Generator_UserColumnName="RememberPassword" msprop:Generator_ColumnVarNameInTable="columnRememberPassword" msprop:Generator_ColumnPropNameInRow="RememberPassword" msprop:Generator_ColumnPropNameInTable="RememberPasswordColumn" type="xs:boolean" default="false" />
+              <xs:element name="ActiveUser" msprop:Generator_UserColumnName="ActiveUser" msprop:Generator_ColumnVarNameInTable="columnActiveUser" msprop:Generator_ColumnPropNameInRow="ActiveUser" msprop:Generator_ColumnPropNameInTable="ActiveUserColumn" type="xs:boolean" default="false" />
+              <xs:element name="Version" msprop:Generator_UserColumnName="Version" msprop:Generator_ColumnVarNameInTable="columnVersion" msprop:Generator_ColumnPropNameInRow="Version" msprop:Generator_ColumnPropNameInTable="VersionColumn" type="xs:string" default="2.0" />
+              <xs:element name="Charset" msprop:Generator_UserColumnName="Charset" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnCharset" msprop:Generator_ColumnPropNameInTable="CharsetColumn" msprop:Generator_ColumnPropNameInRow="Charset" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GlobalSettings" msprop:Generator_UserTableName="GlobalSettings" msprop:Generator_RowDeletedName="GlobalSettingsRowDeleted" msprop:Generator_RowChangedName="GlobalSettingsRowChanged" msprop:Generator_RowClassName="GlobalSettingsRow" msprop:Generator_RowChangingName="GlobalSettingsRowChanging" msprop:Generator_RowEvArgName="GlobalSettingsRowChangeEvent" msprop:Generator_RowEvHandlerName="GlobalSettingsRowChangeEventHandler" msprop:Generator_TableClassName="GlobalSettingsDataTable" msprop:Generator_TableVarName="tableGlobalSettings" msprop:Generator_RowDeletingName="GlobalSettingsRowDeleting" msprop:Generator_TablePropName="GlobalSettings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MainFormHeight" msprop:Generator_UserColumnName="MainFormHeight" msprop:Generator_ColumnPropNameInRow="MainFormHeight" msprop:Generator_ColumnVarNameInTable="columnMainFormHeight" msprop:Generator_ColumnPropNameInTable="MainFormHeightColumn" type="xs:int" default="600" minOccurs="0" />
+              <xs:element name="MainFormWidth" msprop:Generator_UserColumnName="MainFormWidth" msprop:Generator_ColumnPropNameInRow="MainFormWidth" msprop:Generator_ColumnVarNameInTable="columnMainFormWidth" msprop:Generator_ColumnPropNameInTable="MainFormWidthColumn" type="xs:int" default="800" minOccurs="0" />
+              <xs:element name="MainFormTop" msprop:Generator_UserColumnName="MainFormTop" msprop:Generator_ColumnPropNameInRow="MainFormTop" msprop:Generator_ColumnVarNameInTable="columnMainFormTop" msprop:Generator_ColumnPropNameInTable="MainFormTopColumn" type="xs:int" default="-1" minOccurs="0" />
+              <xs:element name="MainFormLeft" msprop:Generator_UserColumnName="MainFormLeft" msprop:Generator_ColumnPropNameInRow="MainFormLeft" msprop:Generator_ColumnVarNameInTable="columnMainFormLeft" msprop:Generator_ColumnPropNameInTable="MainFormLeftColumn" type="xs:int" default="-1" minOccurs="0" />
+              <xs:element name="MainFormMaximized" msprop:Generator_UserColumnName="MainFormMaximized" msprop:Generator_ColumnVarNameInTable="columnMainFormMaximized" msprop:Generator_ColumnPropNameInRow="MainFormMaximized" msprop:Generator_ColumnPropNameInTable="MainFormMaximizedColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="TreePanelWidth" msprop:Generator_UserColumnName="TreePanelWidth" msprop:Generator_ColumnVarNameInTable="columnTreePanelWidth" msprop:Generator_ColumnPropNameInRow="TreePanelWidth" msprop:Generator_ColumnPropNameInTable="TreePanelWidthColumn" type="xs:int" default="180" minOccurs="0" />
+              <xs:element name="ShowLoadingForm" msprop:Generator_UserColumnName="ShowLoadingForm" msprop:Generator_ColumnVarNameInTable="columnShowLoadingForm" msprop:Generator_ColumnPropNameInRow="ShowLoadingForm" msprop:Generator_ColumnPropNameInTable="ShowLoadingFormColumn" type="xs:boolean" default="true" />
+              <xs:element name="ConfirmSuccessfullyEditBug" msprop:Generator_UserColumnName="ConfirmSuccessfullyEditBug" msprop:Generator_ColumnVarNameInTable="columnConfirmSuccessfullyEditBug" msprop:Generator_ColumnPropNameInRow="ConfirmSuccessfullyEditBug" msprop:Generator_ColumnPropNameInTable="ConfirmSuccessfullyEditBugColumn" type="xs:boolean" default="true" />
+              <xs:element name="ShowBugsCount" msprop:Generator_UserColumnName="ShowBugsCount" msprop:Generator_ColumnPropNameInRow="ShowBugsCount" msprop:Generator_ColumnVarNameInTable="columnShowBugsCount" msprop:Generator_ColumnPropNameInTable="ShowBugsCountColumn" type="xs:boolean" default="true" />
+              <xs:element name="ReportFilesPath" msprop:Generator_UserColumnName="ReportFilesPath" msprop:Generator_ColumnVarNameInTable="columnReportFilesPath" msprop:Generator_ColumnPropNameInRow="ReportFilesPath" msprop:Generator_ColumnPropNameInTable="ReportFilesPathColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckForUpdate" msprop:Generator_UserColumnName="CheckForUpdate" msprop:Generator_ColumnPropNameInRow="CheckForUpdate" msprop:Generator_ColumnVarNameInTable="columnCheckForUpdate" msprop:Generator_ColumnPropNameInTable="CheckForUpdateColumn" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="LastMyZillaVersion" msprop:Generator_UserColumnName="LastMyZillaVersion" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnLastMyZillaVersion" msprop:Generator_ColumnPropNameInTable="LastMyZillaVersionColumn" msprop:Generator_ColumnPropNameInRow="LastMyZillaVersion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Preferences" msprop:Generator_UserTableName="Preferences" msprop:Generator_RowDeletedName="PreferencesRowDeleted" msprop:Generator_RowChangedName="PreferencesRowChanged" msprop:Generator_RowClassName="PreferencesRow" msprop:Generator_RowChangingName="PreferencesRowChanging" msprop:Generator_RowEvArgName="PreferencesRowChangeEvent" msprop:Generator_RowEvHandlerName="PreferencesRowChangeEventHandler" msprop:Generator_TableClassName="PreferencesDataTable" msprop:Generator_TableVarName="tablePreferences" msprop:Generator_RowDeletingName="PreferencesRowDeleting" msprop:Generator_TablePropName="Preferences">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConnectionId" msprop:Generator_UserColumnName="ConnectionId" msprop:Generator_ColumnVarNameInTable="columnConnectionId" msprop:Generator_ColumnPropNameInRow="ConnectionId" msprop:Generator_ColumnPropNameInTable="ConnectionIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpandTree" msprop:Generator_UserColumnName="ExpandTree" msprop:Generator_ColumnVarNameInTable="columnExpandTree" msprop:Generator_ColumnPropNameInRow="ExpandTree" msprop:Generator_ColumnPropNameInTable="ExpandTreeColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Columns" msprop:Generator_UserTableName="Columns" msprop:Generator_RowDeletedName="ColumnsRowDeleted" msprop:Generator_RowChangedName="ColumnsRowChanged" msprop:Generator_RowClassName="ColumnsRow" msprop:Generator_RowChangingName="ColumnsRowChanging" msprop:Generator_RowEvArgName="ColumnsRowChangeEvent" msprop:Generator_RowEvHandlerName="ColumnsRowChangeEventHandler" msprop:Generator_TableClassName="ColumnsDataTable" msprop:Generator_TableVarName="tableColumns" msprop:Generator_RowDeletingName="ColumnsRowDeleting" msprop:Generator_TablePropName="Columns">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="ConnectionId" msprop:Generator_UserColumnName="ConnectionId" msprop:Generator_ColumnVarNameInTable="columnConnectionId" msprop:Generator_ColumnPropNameInRow="ConnectionId" msprop:Generator_ColumnPropNameInTable="ConnectionIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Label" msprop:Generator_UserColumnName="Label" msprop:Generator_ColumnVarNameInTable="columnLabel" msprop:Generator_ColumnPropNameInRow="Label" msprop:Generator_ColumnPropNameInTable="LabelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_UserColumnName="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Sort" msprop:Generator_UserColumnName="Sort" msprop:Generator_ColumnVarNameInTable="columnSort" msprop:Generator_ColumnPropNameInRow="Sort" msprop:Generator_ColumnPropNameInTable="SortColumn" type="xs:unsignedByte" default="0" minOccurs="0" />
+              <xs:element name="SortIndex" msprop:Generator_UserColumnName="SortIndex" msprop:Generator_ColumnPropNameInRow="SortIndex" msprop:Generator_ColumnVarNameInTable="columnSortIndex" msprop:Generator_ColumnPropNameInTable="SortIndexColumn" type="xs:unsignedByte" default="0" minOccurs="0" />
+              <xs:element name="DisplayIndex" msprop:Generator_UserColumnName="DisplayIndex" msprop:Generator_ColumnPropNameInRow="DisplayIndex" msprop:Generator_ColumnVarNameInTable="columnDisplayIndex" msprop:Generator_ColumnPropNameInTable="DisplayIndexColumn" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="Visible" msprop:Generator_UserColumnName="Visible" msprop:Generator_ColumnPropNameInRow="Visible" msprop:Generator_ColumnVarNameInTable="columnVisible" msprop:Generator_ColumnPropNameInTable="VisibleColumn" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Connection" />
+      <xs:field xpath="mstns:ConnectionId" />
+    </xs:unique>
+    <xs:unique name="Columns_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Columns" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:keyref name="FK_Connection_Columns" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Columns" />
+      <xs:field xpath="mstns:ConnectionId" />
+    </xs:keyref>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Rel_ConnectionType" msdata:parent="ConnectionType" msdata:child="Connection" msdata:parentkey="Name" msdata:childkey="Type" msprop:Generator_UserRelationName="Rel_ConnectionType" msprop:Generator_RelationVarName="relationRel_ConnectionType" msprop:Generator_UserChildTable="Connection" msprop:Generator_UserParentTable="ConnectionType" msprop:Generator_ParentPropName="ConnectionTypeRow" msprop:Generator_ChildPropName="GetConnectionRows" />
+      <msdata:Relationship name="Rel_Conn" msdata:parent="Connection" msdata:child="Preferences" msdata:parentkey="ConnectionId" msdata:childkey="ConnectionId" msprop:Generator_UserRelationName="Rel_Conn" msprop:Generator_RelationVarName="relationRel_Conn" msprop:Generator_UserChildTable="Preferences" msprop:Generator_UserParentTable="Connection" msprop:Generator_ParentPropName="ConnectionRow" msprop:Generator_ChildPropName="GetPreferencesRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
