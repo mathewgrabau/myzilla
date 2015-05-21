@@ -1,0 +1,1 @@
+MyZilla is a free Windows desktop client for the Bugzilla  bug tracking system. By providing the means of working with a desktop application, it increases the productivity of all project members.
